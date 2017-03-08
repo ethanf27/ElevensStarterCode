@@ -22,7 +22,9 @@ public class Card {
 
 
    /**
-	 * Creates a new <code>Card</code> instance.
+
+	 * String value that holds the suit of the card
+	 */	 * Creates a new <code>Card</code> instance.
 	 *
 	 * @param cardRank  a <code>String</code> value
 	 *                  containing the rank of the card
