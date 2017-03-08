@@ -1,3 +1,5 @@
+package Activity01;
+
 /**
  * This is a class that tests the Card class.
  */
@@ -9,5 +11,6 @@ public class CardTester {
 	 */
 	public static void main(String[] args) {
 		/* *** TO BE IMPLEMENTED IN ACTIVITY 1 *** */
+                Card a = new Card("jack","heart",1);
 	}
 }
