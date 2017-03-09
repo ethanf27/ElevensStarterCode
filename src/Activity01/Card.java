@@ -1,3 +1,5 @@
+package Activity01;
+
 /**
  * Card.java
  *
@@ -24,7 +26,7 @@ public class Card {
    /**
 
 	 * String value that holds the suit of the card
-	 */	 * Creates a new <code>Card</code> instance.
+	 /**	 Creates a new <code>Card</code> instance.
 	 *
 	 * @param cardRank  a <code>String</code> value
 	 *                  containing the rank of the card
@@ -32,9 +34,12 @@ public class Card {
 	 *                  containing the suit of the card
 	 * @param cardPointValue an <code>int</code> value
 	 *                  containing the point value of the card
-	 */
+         */
 	public Card(String cardRank, String cardSuit, int cardPointValue) {
 		/* *** TO BE IMPLEMENTED IN ACTIVITY 1 *** */
+                suit=cardSuit;
+                rank=cardRank;
+                pointValue=cardPointValue;
 	}
 
 
@@ -70,6 +75,12 @@ public class Card {
 	 */
 	public boolean matches(Card otherCard) {
 		/* *** TO BE IMPLEMENTED IN ACTIVITY 1 *** */
+                if card.equals(otherCard){
+                    return true;
+                }
+                else{
+                    return false;
+                }
 	}
 
 	/**
@@ -85,5 +96,7 @@ public class Card {
 	@Override
 	public String toString() {
 		/* *** TO BE IMPLEMENTED IN ACTIVITY 1 *** */
+                return rank + " of " + suit + pointValue;
+                //return "the suit is " + suit +  " the rank is " + rank + " the value is " + pointValue;
 	}
 }
